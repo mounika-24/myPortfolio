@@ -1,0 +1,90 @@
+.pages-navigation{
+    padding: 2rem;
+
+    .nav-container{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-item{
+            align-self: center;
+            margin: 0 2rem;
+        }
+
+        .head-logo{
+            animation: slideFromLeft 1s ease-in;
+        }
+        .nav-links{
+            animation: slideFromRight 1s ease-in;
+        }
+    }
+}
+
+@keyframes slideFromLeft {
+    0%{
+        transform: skew(-43deg) translateX(-300px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skew(0deg) translateX(30px);
+    }
+    70%{
+        transform: skew(20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slideFromRight {
+    0%{
+        transform: skew(43deg) translateX(300px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skew(0deg) translateX(-30px);
+    }
+    70%{
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+
+.head-logo{
+    color: black;
+    font-size: 2rem;
+}
+
+.nav-link{
+    padding: 0 1rem;
+}
