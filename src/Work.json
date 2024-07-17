@@ -1,0 +1,65 @@
+{
+    "Companies": [
+        {
+            "Company": "Zivame",
+            "Position": "SDE-1",
+            "JoiningDate": "May '22",
+            "EndingDate": "June '24",
+            "Location": "Bangalore",
+            "Projects": [
+                {
+                    "Title": "Cart Page",
+                    "Description": "Independently redeveloped the entire cart and offers page, utilizing jQuery and Handlebars templates. Designed and implemented multiple item selection components to enhance user experience. Integrated jQuery Slick Slider to create dynamic and responsive sliders for product images. Developed interactive pop-ups for user notifications and confirmations. Implemented API integrations for POST, PUT, DELETE, and GET requests to manage cart functionalities effectively. Implemented a flexible code structure to streamline A/B testing, contributing to a 32% increase in cart conversions.",
+                    "Skills": [
+                        "JQuery",
+                        "Handlebars",
+                        "Nodejs"
+                    ]
+                },
+                {
+                    "Title": "Image Upload Feature",
+                    "Description": "Developed a feature allowing users to upload photos for product return requests. Utilized an npm package “multer” to handle image uploads from the client to the server. Implemented the client-side functionality to capture and send image data to the NodeJs backend. Processed the image buffer data received from the request body on the server side. Ensured secure and efficient transfer and storage of images for product return requests. Worked closely with the backend team to integrate this functionality into the existing system, ensuring seamless user experience and backend processing.",
+                    "Skills": [
+                        "Reactjs",
+                        "Nodejs",
+                        "NPM",
+                        "Redux"
+                    ]
+                },
+                {
+                    "Title": "Home Page",
+                    "Description": "Took charge of the entire home page, implementing it in NextJs thereby improving performance by 18%. Utilized React hooks to create interactive and dynamic animations. Worked closely with UI/UX designers to ensure seamless and visually appealing shopping experience. Actively engaged with backend developers to establish efficient API structures and utilized RESTful API standards and web protocols, ensuring seamless integration and optimal performance for frontend functionalities.",
+                    "Skills": [
+                        "Nextjs",
+                        "Nodejs",
+                        "React Hooks"
+                    ]
+                },
+                {
+                    "Title": "Integration of AWS Services and Firestore",
+                    "Description": "Integrated AWS services such as KMS, Cognito, and Secrets Manager into the application to enhance security and authorization processes. Utilized AWS KMS for encrypting sensitive data, ensuring data security and compliance with industry standards. Implemented AWS Cognito for user authentication and authorization, providing secure access control mechanisms. Configured AWS Secrets Manager to manage and retrieve database credentials and API keys securely. Integrated Firestore and utilized its real-time data fetching capabilities to enhance the application's responsiveness and user experience. Demonstrated proficiency in integrating third-party services and SDKs, optimizing the application’s functionality and performance.",
+                    "Skills": [
+                        "Reactjs",
+                        "Nodejs",
+                        "Google tag Manager",
+                        "JavaScript"
+                    ]
+                }
+            ]
+        },
+        {
+            "Company": "HCL Techoloies",
+            "Position": "Verification and Technical Support Engineer",
+            "JoiningDate": "Oct '18",
+            "EndingDate": "Jan '22",
+            "Location": "Chennai",
+            "Projects": [
+                {
+                    "Title": "EFI and Xerox Project",
+                    "Description": "Worked on FPGAs in a sustenance project involving high-capacity printers. Responsibilities include debugging logs, analyzing problems. Programmed FPGAs using Verilog. Taking care of hardware issues on DFE's(Digtal Front Ends).",
+                    "Skills": ["Verilog","Chipscope","Xilinx"]
+                }
+            ]
+        }
+    ]
+}

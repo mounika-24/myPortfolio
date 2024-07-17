@@ -1,0 +1,20 @@
+<svg id="m-logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96" >
+    <title>M Logo</title>
+    <polygon
+        fill="#3b0261"
+        stroke="#ebc4f5"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points="42 3 3 24.5 3 71.5 42 93 81 71.5 81 24.5"
+    />
+    <text
+        x="35"
+        y="50"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        style="fontSize: 50px; fill: #ebc4f5"
+    >
+        M
+    </text>
+</svg>
