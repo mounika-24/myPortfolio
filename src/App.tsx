@@ -3,8 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import logo from './assets/images/logo.svg';
 import './assets/styles/App.scss';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Work from './components/Work';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Work from './pages/Work';
 
 function App() {
   return (
@@ -15,26 +17,15 @@ function App() {
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         {/* https://devicon.dev/ for programming related icons */}
-
         <Navbar />
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
       </header>
       <Routes>
         <Route path="/" Component={Home} />
-        {/* <Route path="/about" Component={About} /> */}
+        <Route path="/about" Component={About} />
         <Route path="/work" Component={Work} />
       </Routes>
+      <Footer />
+      <div className='cursor-highlight'></div>
     </div>
   );
 }

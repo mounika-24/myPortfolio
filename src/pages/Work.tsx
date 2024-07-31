@@ -1,6 +1,7 @@
 import React from 'react';
 import rawWorkData from '../Work.json';
-import Projects from './Projects';
+import Projects from '../components/Projects';
+import '../assets/styles/Work.scss';
 
 interface projectsData {
     Title: string;
@@ -9,7 +10,7 @@ interface projectsData {
 }
 
 interface WorkDataType {
-    Companies:{
+    Companies: {
         Company: string;
         Location?: string;
         JoiningDate: string;
@@ -17,7 +18,7 @@ interface WorkDataType {
         Position: string;
         Projects: projectsData[];
     }[]
-    
+
 }
 
 // Asserting the type of the imported JSON data
@@ -27,13 +28,15 @@ const Work: React.FC = (): JSX.Element => {
 
     return (
         <div className='company-section page'>
+            <h1 className='section-heading'>My Work Experience</h1>
             {
                 workData.Companies.map((workData, index) =>
                     <section className='company-profile'>
-                        <h2 className='company-name'>{workData?.Position} @ {workData?.Company}</h2>
+                        <h2 className='company-name fs15'>{workData?.Position} @ {workData?.Company}
+                            <span className='tenure fs7'>{workData?.JoiningDate} - {workData?.EndingDate}</span>
+                        </h2>
                         {/* <h4 className='company-location'>{workData?.Location}</h4> */}
-                        <h5 className='tenure'>{workData?.JoiningDate} - {workData?.EndingDate}</h5>
-                        {workData?.Projects.map((project,index)=><Projects data = {project} key={project.Title}/>)}
+                        {workData?.Projects.map((project, index) => <Projects data={project} key={project.Title} />)}
                     </section>
                 )
             }

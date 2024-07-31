@@ -1,0 +1,33 @@
+.tenure{
+    margin-left: 0.5rem;
+}
+
+.project-skills{
+    margin-left: 2.5rem;
+
+    .skill-involved{
+        padding: 0.2rem 0.5rem;
+        margin-right: 0.3rem;
+        // background-color: var(--secondary-div-color);
+        background-color: var(--button-bg-color);//rgb(99, 248, 254, 0.2);
+        color: var(--button-color);
+        border-radius: 0.5rem;
+    }
+}
+
+.project-div{
+    border-top: 1px solid var(--border-color);
+    border-radius: 2rem;
+    padding: 0 0 1rem 1rem;
+    background-color: var(--primary-div-color);
+    margin: 1rem 0;
+    color: var(--secondary-div-text-color);
+
+    .project-title{
+        color: var(--bright-text-color);
+    }
+}
+
+.project-div:hover{
+    background-color: var(--secondary-div-color);
+}
