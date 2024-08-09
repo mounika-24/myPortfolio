@@ -6,30 +6,33 @@ const About: React.FC = (): JSX.Element => {
     const skillsDivRef = useRef(null);
 
     useEffect(() => {
+        const skillsDiv = skillsDivRef.current;
         const observer = new IntersectionObserver(
             entries => {
-                // Check for the first entry (we're only observing one element)
                 if (entries[0].isIntersecting) {
-                    setIsVisible(true); // Set visible true when element comes into viewport
-                } else {
-                    setIsVisible(false); // Optional: Set visible false when element goes out of viewport
+                    setIsVisible(true);
                 }
+                // else {
+                //     setIsVisible(false); 
+                // }
+                // Optional: Set visible false when element goes out of viewport if needed to animate
+                // everytime we component moves and comes back to the viewport
             },
             {
                 threshold: 0.5 // Trigger when at least 50% of the element is visible
             }
         );
 
-        if (skillsDivRef.current) {
-            observer.observe(skillsDivRef.current);
+        if (skillsDiv) {
+            observer.observe(skillsDiv);
         }
 
         return () => {
-            if (skillsDivRef.current) {
-                observer.unobserve(skillsDivRef.current);
+            if (skillsDiv) {
+                observer.unobserve(skillsDiv);
             }
         };
-    }, [skillsDivRef]);
+    }, []);
 
     return (
         <div className='about-page page'>

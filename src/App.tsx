@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import logo from './assets/images/logo.svg';
 import './assets/styles/App.scss';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -12,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <script src="https://kit.fontawesome.com/437cc2230b.js" crossOrigin="anonymous"></script>
-        {/* Above script is not working */}
+        {/* <script src="https://kit.fontawesome.com/437cc2230b.js" crossOrigin="anonymous"></script> */}
+        {/* Above script is not working so using the below one*/}
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         {/* https://devicon.dev/ for programming related icons */}

@@ -1,40 +1,42 @@
-.about-page{
+.about-page {
     display: flex;
     gap: 1rem;
 
-    @media screen and (max-width: 899px){
+    @media screen and (max-width: 899px) {
         flex-direction: column;
     }
 
 }
-.about-me{
+
+.about-me {
     line-height: 1.5;
     text-align: justify;
 
-    .contact-me{
+    .contact-me {
         color: var(--button-color);
         cursor: pointer;
         transition: 0.2s;
         font-weight: 400;
     }
-    .contact-me:hover{
+
+    .contact-me:hover {
         text-decoration: underline;
     }
 }
 
-.skills{
+.skills {
     min-width: 90px;
     background-color: var(--primary-div-color);
     border-radius: 1.5rem;
     text-align: center;
 
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px) {
         max-height: 600px;
         min-width: 250px;
     }
 }
 
-.skill-list{
+.skill-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -44,16 +46,16 @@
     gap: 1rem;
     height: 80%;
 
-    @media screen and (max-width: 899px){
+    @media screen and (max-width: 899px) {
         flex-direction: row;
         width: 100%;
         height: 250px;
         flex-wrap: wrap;
     }
-      
+
 }
 
-.skill-div{
+.skill-div {
     display: none;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -64,18 +66,21 @@
 
     &.skill-animate {
         display: inline-block;
-        @for $i from 1 through 8 { // Assuming you have up to 8 items
-        &:nth-child(#{$i}) {
-            animation: slideFromTop calc(0.2s * #{$i}) ease-out; //calc(0.5s * #{$i}) forwards;
-        }
+
+        @for $i from 1 through 8 {
+
+            // Assuming you have up to 8 items
+            &:nth-child(#{$i}) {
+                animation: slideFromTop calc(0.2s * #{$i}) ease-out; //calc(0.5s * #{$i}) forwards;
+            }
         }
     }
 
-    img{
+    img {
         height: 3rem;
     }
 
-    .skill-name{
+    .skill-name {
         font-size: 0.7rem;
         display: inline-block;
         text-align: center;
@@ -83,34 +88,40 @@
     }
 }
 
-.skill-div:hover{
+.skill-div:hover {
     background-color: var(--light-text-color);
     color: var(--main-bg-color);
-    transform: translate(-5px,-5px);
+    transform: translate(-5px, -5px);
 }
 
 @keyframes slideFromTop {
-    0%{
+    0% {
         transform: skew(-43deg) translateY(-100vh);
         opacity: 0;
     }
-    60%{
+
+    60% {
         transform: translateY(0px);
     }
-    62%{
+
+    62% {
         transform: skew(0deg) translateY(30px);
     }
-    70%{
+
+    70% {
         transform: skew(20deg);
         opacity: 1;
     }
-    80%{
+
+    80% {
         transform: skew(0deg) translate(0);
     }
-    90%{
+
+    90% {
         transform: skew(5deg);
     }
-    100%{
+
+    100% {
         transform: skew(0deg);
     }
 }
